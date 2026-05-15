@@ -1,0 +1,14 @@
+# MXm-IPTrack - Lista de IPs para modo batch
+# Agrega una IP por línea. Las líneas que empiecen con # se ignoran.
+
+# Servidores DNS públicos
+8.8.8.8
+1.1.1.1
+9.9.9.9
+
+# Servidores de México
+189.240.60.1
+148.244.65.2
+
+# Servidores de otros países
+208.67.222.222
