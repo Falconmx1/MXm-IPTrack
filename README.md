@@ -47,3 +47,30 @@ text
 [+] Lat/Lon: 20.6597, -103.3496
 [+] ISP: Telmex
 [+] Mapa: https://maps.google.com/?q=20.6597,-103.3496
+
+1️⃣ Generar reporte HTML bonito:
+mxtrack -t 8.8.8.8 -html reporte.html
+# Abre reporte.html en tu navegador
+
+2️⃣ Enviar resultado por Telegram:
+
+Primero configura config.cfg con tu token y chat ID.
+
+¿Cómo obtener token y chat ID?
+
+    Token: Habla con @BotFather en Telegram, crea un bot y te dará un token tipo 123456:ABC-DEF...
+
+    Chat ID: Envía un mensaje a tu bot y luego visita https://api.telegram.org/bot<TU_TOKEN>/getUpdates, ahí aparece tu chat_id
+
+Luego:
+mxtrack -t 1.1.1.1 -tg
+
+3️⃣ Combinar HTML + Telegram:
+bash
+
+mxtrack -m -html mi_ip.html && mxtrack -m -tg
+
+4️⃣ Batch + Telegram (enviar cada resultado):
+
+Modifica el batch si quieres que envíe cada IP a Telegram (avísame y te lo agrego).
+
